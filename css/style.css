@@ -1,0 +1,96 @@
+/*--------<< Polices >>--------*/
+
+@font-face {
+	font-family: archery;
+	src: url("../fonts/SF_Archery_Black.ttf");
+}
+
+/*--------<< Paramètres généraux + corps de page >>---------*/
+
+body * {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-image: url("../images/jpp.jpp.png");
+	background-size: cover;
+}
+
+#centre {
+	margin: auto;
+	margin-top: 75px;
+	padding: 50px;
+	width: 90%;
+	height: auto;
+	background-color: rgba(150, 150, 150, 0.5);
+}
+
+/*--------<< Zone de jeu >>--------*/
+
+#jeu {
+	display: flex;
+	justify-content: space-between;
+}
+
+#centre h1 {
+	text-align: center;
+	font-family: archery;
+	font-size: 50px;
+}
+
+#centre #joueur1 {
+	width: 300px;
+	height: 100%;
+	text-align: center;
+	font-family: archery;
+	font-size: 25px;
+}
+
+#centre #joueur2 {
+	width: 300px;
+	height: 100%;
+	text-align: center;
+	font-family: archery;
+	font-size: 25px;
+}
+
+#jeu table {
+	margin-top: 50px;
+	border-collapse: collapse;
+}
+
+table td {
+	width: 100px;
+	height: 100px;
+	border: 3px black solid;
+	background-color: white;
+}
+
+/*--------<< Affichage du gagnant >>--------*/
+
+#winner {
+	position: fixed;
+	width: 200px;
+	height: 100px;
+	border: 2px black solid;
+	left: 42.5%;
+	background-color: yellow;
+	color: red;
+	text-align: center;
+	font-family: archery;
+	font-size: 40px;
+	visibility: hidden;
+}
+
+/*--------<< Classes joueurs : X & O >>--------*/
+
+.player1 {
+	background-image: url("../images/tic.png");
+	background-size: contain;
+}
+
+.player2 {
+	background-image: url("../images/tac.png");
+	background-size: contain;
+}
